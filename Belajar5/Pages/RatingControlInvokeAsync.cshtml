@@ -1,0 +1,16 @@
+﻿@page
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RatingControlInvokeAsync</title>
+</head>
+<body>
+    @await Component.InvokeAsync("RatingControl", new { ratingControlType = "1to10" })
+</body>
+</html>

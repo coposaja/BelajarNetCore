@@ -1,0 +1,23 @@
+[
+  {
+    "outputFileName": "wwwroot/css/vendor.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+    ],
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFileName": "wwwroot/js/vendor.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery.js",
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "wwwroot/lib/jquery-validate/jquery-validate.js",
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery-validation-unobtrusive.js"
+    ],
+    "minify": {
+      "enabled": false
+    }
+  }
+]

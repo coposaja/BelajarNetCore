@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/css/vendor.min.css" />
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/vendor-validation.min.js"></script>
+</head>
+<body>
+    <h1>Index</h1>
+
+    <form asp-action="Index" asp-controller="Category" data-ajax="true" data-ajax-method="POST"
+          data-ajax-mode="before" data-ajax-update="#ajaxresult">
+
+        <div id="ajaxresult">
+            @await Html.PartialAsync("_Z")
+        </div>
+    </form>
+</body>
+</html>

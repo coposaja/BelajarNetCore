@@ -1,0 +1,18 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout";
+}
+
+<form asp-action="Create" role="form" asp-controller="Category" asp-antiforgery="true"
+        data-ajax="true"
+        data-ajax-method="POST"
+        data-ajax-update="#update"
+        data-ajax-mode="before">
+    <div class="form-group">
+        <input class="form-control" type="text"/>
+    </div>
+    <div id="update">
+        <span>A</span>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Save" />
+</form>
