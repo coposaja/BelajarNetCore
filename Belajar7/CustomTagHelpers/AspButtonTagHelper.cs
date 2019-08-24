@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Belajar7.CustomTagHelpers
 {
-    [HtmlTargetElement("aspbuttonaa")]
+    [HtmlTargetElement("aspbutton")]
     public class AspButtonTagHelper : TagHelper
     {
         public string Type { get; set; } = "Submit";
@@ -18,7 +18,6 @@ namespace Belajar7.CustomTagHelpers
             output.TagMode = TagMode.StartTagAndEndTag;
             output.Attributes.SetAttribute("class", $"btn btn-{BackgroundColor}");
             output.Attributes.SetAttribute("type", Type);
-            output.Content.SetContent("Click to Add Record");
         }
     }
 }
