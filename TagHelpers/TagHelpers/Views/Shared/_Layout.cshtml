@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    @*<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+              asp-fallback-href-include="/lib/bootstrap/dist/**/*.min.css"
+              asp-fallback-href-exclude="**/*reboot*,**/*grid*"
+              asp-fallback-test-class="btn"
+              asp-fallback-test-property="display"
+              asp-fallback-test-value="inline-block"
+              rel="stylesheet" />
+        <script asp-src-include="/lib/bootstrap/dist/**/b*.js"
+                asp-src-exclude="**.slim.*,**.min.*,**.bundle.*"
+                asp-append-version="true">
+        </script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+                asp-fallback-src-include="/lib/jquery/dist/**/*.min.js"
+                asp-fallback-src-exclude="**.slim.**"
+                asp-fallback-test="window.jQuery">
+        </script>*@
+</head>
+<body>
+    <div class="container-fluid">
+        @*<div class="bg-info text-warning">
+            <cache expires-sliding="@TimeSpan.FromSeconds(10)" vary-by="@ViewContext.RouteData.Values["action"]">
+                Date Time: @DateTime.Now.ToString("HH:mm:ss")
+            </cache>
+        </div>*@
+        <div action-name="Index" class="bg-danger">
+            <h2>Hello</h2>
+        </div>
+        <div pre-post="Tag Helpers">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
