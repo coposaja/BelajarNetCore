@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "";
+}
+
+<h1>Index</h1>
+<link rel="stylesheet" href="~/css/vendor.min.css" />
+<script src="~/js/vendor.min.js" asp-append-version="true"></script>
+<script src="~/js/vendor-validation.min.js" asp-append-version="true"></script>
+
+<form asp-action="Index" asp-controller="Category" data-ajax="true" data-ajax-method="POST"
+      data-ajax-mode="after" data-ajax-update="#ajaxresult">
+
+    <div id="ajaxresult">
+        @await Html.PartialAsync("_Z")
+    </div>
+</form>
