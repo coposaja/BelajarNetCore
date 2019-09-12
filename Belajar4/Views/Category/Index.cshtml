@@ -10,8 +10,9 @@
 
 <form asp-action="Index" asp-controller="Category" data-ajax="true" data-ajax-method="POST"
       data-ajax-mode="after" data-ajax-update="#ajaxresult">
-
-    <div id="ajaxresult">
         @await Html.PartialAsync("_Z")
-    </div>
 </form>
+
+<div id="ajaxresult">
+
+</div>
