@@ -3,6 +3,13 @@
 
 CintaUang/
 CintaUang_TFS/
+AspNetCoreBootstrap4Validation/
+AspNetCore.Docs-master/
+ConferencePlanner2019/
+EmployeeManagement/
+progress-telerik-blog-viewcomponent/
+TripTracker/
+TagHelpers/
 
 # User-specific files
 *.suo
