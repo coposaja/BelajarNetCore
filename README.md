@@ -23,4 +23,4 @@ View Component with MVC standard architecture
 Tag Helper
 
 ## Belajar8
-Email Sending
+Email Sending with MailKit and MimeKit package
