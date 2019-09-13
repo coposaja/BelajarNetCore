@@ -27,3 +27,6 @@ Email Sending with MailKit and MimeKit package
 
 ## Belajar9
 Download Excel
+
+## Belajar10
+Read data from Excel

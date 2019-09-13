@@ -17,10 +17,10 @@ namespace Belajar9.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IHostingEnvironment hostingEnvironment;
-        public HomeController(IHostingEnvironment hostingEnvironment)
+        private readonly IHostingEnvironment _env;
+        public HomeController(IHostingEnvironment _env)
         {
-            this.hostingEnvironment = hostingEnvironment;
+            this._env = _env;
         }
         public IActionResult Index()
         {
@@ -29,13 +29,13 @@ namespace Belajar9.Controllers
                 ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Sheet 1");
                 worksheet = GetWorksheet(worksheet);
 
-                string path = Path.Combine(hostingEnvironment.WebRootPath, DateTime.Now.ToFileTime().ToString(), ".xlsx");
-                FileInfo file = new FileInfo("D:/Belajar/Hansen.xlsx");
+                string path = Path.Combine(_env.WebRootPath, DateTime.Now.ToFileTime().ToString(), ".xlsx");
+                FileInfo file = new FileInfo(Path.Combine(_env.WebRootPath, "Hansen.xlsx"));
                 package.SaveAs(file);
             }
 
-            byte[] fileBytes = System.IO.File.ReadAllBytes("D:/Belajar/Hansen.xlsx");
-            FileInfo deleteFile = new FileInfo("D:/Belajar/Hansen.xlsx");
+            byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(_env.WebRootPath, "Hansen.xlsx"));
+            FileInfo deleteFile = new FileInfo(Path.Combine(_env.WebRootPath, "Hansen.xlsx"));
             deleteFile.Delete();
             return File(fileBytes, MediaTypeNames.Application.Octet, "Report.xlsx");
         }
