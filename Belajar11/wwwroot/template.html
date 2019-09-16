@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #tblPerkawinanBelumSelesai tbody tr {
+            border-bottom: 1px solid black;
+            line-height: 22pt;
+            text-align: center;
+        }
+    </style>
+    <style>
+        #ffooter > section > div > a {
+            display: block;
+            width: 50%;
+            color: #FFF;
+            text-decoration: none;
+            line-height: 3pt;
+        }
+
+        #ffooter > section > div {
+            width: 100%;
+        }
+
+        #ffooter > section {
+            position: relative;
+            background-color: #22313F;
+            border: 1px solid orangered;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+            #ffooter > section > div > section {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 50%;
+                border-left: 2px solid white;
+                height: 60px;
+            }
+
+        @media only screen and (max-width: 1400px) {
+            #ffooter > section > section {
+                visibility: hidden;
+                display: none;
+            }
+
+            #ffooter > section > div > a > div {
+                width: 50% !important;
+            }
+
+                #ffooter > section > div > a > div > table > tbody > tr > td > section,
+                #ffooter > section > div > a > div > table > tbody > tr > td > section h4,
+                #ffooter > section > div > a > div > table > tbody > tr > td > section h5 {
+                    display: none;
+                }
+
+            #ffooter > section {
+                padding-bottom: 10px;
+            }
+
+                #ffooter > section > div > a > div > table > tbody > tr > td > div > img {
+                    height: 50px !important;
+                }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header style="width: 70%; margin: 0 auto;">
+
+        <div style="width: 100%; margin: 0 auto;">
+            <section style="background-color: #22313F; border: 1px solid orangered; color: white;">
+                <h4 style="font-size: 12pt; padding: 0 11px; margin: 11px;">MANIZER - CINTA UANG</h4>
+            </section>
+
+            <section style="line-height: 24pt;">
+                <p>
+                    Saat ini anda memiliki <%-- Jumlah User --%> users.
+                </p>
+            </section>
+        </div>
+
+    </header>
+
+    <section style="margin: 0 auto; width: 70%;">
+        <table style="width:100%; border-collapse: collapse; table-layout: fixed; min-width: 500px"
+               id="tblPerkawinanBelumSelesai">
+            <thead>
+                <tr style="background-color: #FF6600; color: #FFF;">
+                    <th style="padding: .5rem">Username</th>
+                    <th style="padding: .5rem">Nama Lengkap</th>
+                    <th style="padding: .5rem">Umur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%-- User Table --%>
+            </tbody>
+        </table>
+    </section>
+
+    <section style="margin: 0 auto; width: 70%; margin-top: 50px;">
+        <div style="border: 1px solid black; padding: .5rem">
+            Keterangan:
+            <br />
+            <br />
+            Sekretariat Paroki tidak dapat melakukan pendaftaran Sakramen Perkawinan baru apabila Data Perkawinan belum
+            dilakukan finalisasi data atau batal hingga 3 (tiga) hari setelah tanggal Sakramen Perkawinan,
+        </div>
+    </section>
+
+    <footer style="width: 70%; margin: 0 auto;" id="ffooter">
+
+        <section>
+            <div style="width: 50%;">
+                <a href="https://github.com/manizer/" style="display: inline-block; width: 100%; color: #FFF; margin: auto;" target="_blank">
+                    <div style="max-width: 80%; margin: auto;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="display: inline-block;">
+                                        <img src="https://avatars3.githubusercontent.com/u/53931827?s=200&v=4" alt="" style="height: 65px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <section style="display: inline-block; ">
+                                        <h4>Manizer</h4>
+                                        <h5></h5>
+                                    </section>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+
+            <section style="position: absolute;top: 50%;transform: translateY(-50%);left: 50%;border-left: 2px solid white;height: 60px;visibility: visible;"></section>
+            <div style="width: 50%;">
+                <a href="https://www.binus.ac.id" style="display: inline-block; width: 100%; color: #FFF; margin: auto;">
+                    <div style="max-width: 80%; margin: auto;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="display: inline-block;">
+                                        <img src="http://202.58.181.203:8089/assets/images/logoBinus2.png" alt="" style="height: 65px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <section style="display: inline-block; bottom: 100px;">
+                                        <h4>Bina Nusantara</h4>
+                                        <h5>binus.ac.id</h5>
+                                    </section>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

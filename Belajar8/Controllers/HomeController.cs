@@ -36,8 +36,8 @@ namespace Belajar8.Controllers
             message.Body = bodyBuilder.ToMessageBody();
 
             SmtpClient client = new SmtpClient();
-            client.Connect("smtp.office365.com", 587, false);
-            client.Authenticate("yohanzen.alexander@binus.edu", "01031998");
+            client.Connect("smtp.gmail.com", 587, false);
+            client.Authenticate("copobanget98@gmail.com", "P4$$word");
 
             client.Send(message);
             client.Disconnect(true);

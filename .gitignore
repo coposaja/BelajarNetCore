@@ -11,6 +11,8 @@ progress-telerik-blog-viewcomponent/
 TripTracker/
 TagHelpers/
 BasicEpplusDemo/
+create-pdf-with-netcore-master/
+AspNetCorePdf-master/
 
 # User-specific files
 *.suo
